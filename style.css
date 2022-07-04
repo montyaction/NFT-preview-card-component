@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #0d192b;
+  font-family: 'Outfit', sans-serif;
+  color: #8bacda;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+.container {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card {
+  width: 22rem;
+  max-width: 87.5%;
+  background-color: #14253d;
+  margin: 9.5rem;
+  border-radius: 15px;
+  padding: 1.5rem 1.6rem 2rem;
+}
+
+.card .img-container {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 300px;
+}
+
+.card .img-container .main-img {
+  display: block;
+  min-width: 300px;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.card .img-container .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  background-color: #00fff7;
+  border-radius: 10px;
+}
+
+.card .img-container .view {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+  display: none;
+}
+
+.card .img-container:hover .overlay {
+  opacity: .5;
+  cursor: pointer;
+}
+
+.card .img-container:hover .overlay + .view {
+  display: block;
+}
+
+.card .txt-container .title {
+  color: white;
+  margin: 1.4rem 0 0.75rem;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.card .txt-container .description {
+  font-size: 1.1rem;
+  letter-spacing: 0.015em;
+  margin-bottom: 1rem;
+  font-weight: 300;
+}
+
+.card .txt-container .eth-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 1rem 0 1.4rem;
+}
+
+.card .txt-container .eth-info .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card .txt-container .eth-info .info .icon {
+  margin-right: 0.5rem;
+}
+
+.card .txt-container .eth-info .info .eth {
+  color: #00fff7;
+  font-weight: 600;
+}
+
+.card .creator-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-top: 1px solid #2f415b;
+  padding-top: 1rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card .creator-info .avatar {
+  border: 1px solid white;
+  border-radius: 50%;
+  width: 2rem;
+  height: auto;
+  margin-right: 1rem;
+}
+
+.card .creator-info .creator-text {
+  font-weight: 300;
+}
+
+.card .creator-info .creator-name {
+  color: white;
+}
+
+.card .title:hover,
+.card .creator-name:hover {
+  color: #00fff7;
+  cursor: pointer;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+  text-decoration: none;
+}
+
+.attribution a:hover {
+  color: #00fff7;
+}
+
+@media screen and (max-width: 300px) {
+  .eth-info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+/*# sourceMappingURL=style.css.map */
