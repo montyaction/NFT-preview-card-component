@@ -26,12 +26,12 @@ body {
     line-height: 1.6;
 }
 
-// .container {
-//   height: 100vh;
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-// }
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 // Card
 .card {
@@ -118,7 +118,7 @@ body {
                 .icon {
                     margin-right: 0.5rem;
                 }
-                
+
                 .eth {
                     color: $cyan;
                     font-weight: 600;
@@ -126,13 +126,55 @@ body {
             }
         }
     }
+
+    // Creator Info
+    .creator-info {
+        display: flex;
+        border-top: 1px solid $v-dark-blue-line;
+        padding-top: 1rem;
+        align-items: center;
+
+        .avatar {
+            border: 1px solid $white;
+            border-radius: 50%;
+            width: 2rem;
+            height: auto;
+            margin-right: 1rem;
+        }
+
+        .creator-text {
+            font-weight: 300;
+        }
+        .creator-name {
+            color: $white;
+        }
+    }
+
+    .title:hover,
+    .creator-name:hover {
+        color: $cyan;
+        cursor: pointer;
+    }
 }
 
-
+// Footer Section 
 .attribution {
      font-size: 11px;
      text-align: center;
+
+    a {
+        color: hsl(228, 45%, 44%);
+        text-decoration: none;
+
+        &:hover {
+            color: $cyan;
+        }
+    }
 }
-.attribution a {
-     color: hsl(228, 45%, 44%);
+
+// Media Queries
+@media screen and (max-width: 300px) {
+    .eth-info {
+        flex-direction: column;
+    }
 }
