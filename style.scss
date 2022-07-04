@@ -41,6 +41,7 @@ body {
     margin: 9.5rem;
     border-radius: 15px;
     padding: 1.5rem 1.6rem 2rem;
+    box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.75);
 
     // Main Image
     .img-container {
@@ -159,8 +160,9 @@ body {
 
 // Footer Section 
 .attribution {
-     font-size: 11px;
+     font-size: 14px;
      text-align: center;
+     margin-bottom: 1rem;
 
     a {
         color: hsl(228, 45%, 44%);
